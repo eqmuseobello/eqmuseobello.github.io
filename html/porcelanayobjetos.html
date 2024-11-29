@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcelana y Objetos</title>
+    <link rel="stylesheet" href="../css/stylescinco.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo del museo" class="logo-img"></a> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="../html/casa.html">LA CASA</a></li>
+            <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+            <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+            <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="animate__animated animate__zoomInDown">Porcelana y Objetos</h1>
+            <p class="animate__animated animate__zoomInDown">
+                Sumérgete en la elegancia de la porcelana y la cristalería del siglo XIX, 
+                una colección que refleja el refinado gusto europeo y la influencia de tradiciones artísticas de todo el mundo. 
+                Desde vajillas decorativas de marcas francesas hasta cristalería Art Nouveau, 
+                cada pieza en esta exhibición cuenta su propia historia de lujo y maestría artesanal.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="text-section animate__animated animate__bounce">
+            <h1>El Arte de la Porcelana y el Cristal</h1>
+            <p>
+                La Colección de Porcelana del museo es un despliegue de lujo y elegancia que reúne piezas cuidadosamente seleccionadas para ofrecer un recorrido por el arte decorativo y utilitario del siglo XIX. Entre las piezas más destacadas se encuentran jarrones, floreros y relojes provenientes de reconocidas manufacturas francesas como Biscuit, Sèvres y Limoges, que llenaban de sofisticación los hogares de la época. La colección también incluye vajillas completas de porcelana importadas de Alemania, Austria e Inglaterra, piezas que atestiguan el gusto por la alta artesanía en Europa.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../images/vitrina.jpg" alt="Arte de la Porcelana y el Cristal">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="../images/vitrina2.jpg" alt="Juegos de Cristal Baccarat">
+        </div>
+        <div class="text-section">
+            <p>
+                A este esplendor se suman juegos de cristal Baccarat en estilo Art Nouveau, que con sus formas y detalles únicos aportan un toque de modernidad y estilo a la exhibición. Además, encontramos una amplia variedad de cristalería, como vasos, copas, platos y fruteros, cada uno con un diseño y colorido que reflejan distintas procedencias y tradiciones artísticas. Figuras finamente talladas en marfil, tanto de China como de Italia, capturan la destreza de los artesanos de la época, mientras que los objetos de bronce, inspirados en personajes de la historia y mitología griega, enriquecen la colección con un toque clásico y majestuoso.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-section">
+            <p>
+                La Colección de Porcelana del museo es un despliegue de lujo y elegancia que reúne piezas cuidadosamente seleccionadas para ofrecer un recorrido por el arte decorativo y utilitario del siglo XIX. Entre las piezas más destacadas se encuentran jarrones, floreros y relojes provenientes de reconocidas manufacturas francesas como Biscuit, Sèvres y Limoges, que llenaban de sofisticación los hogares de la época. La colección también incluye vajillas completas de porcelana importadas de Alemania, Austria e Inglaterra, piezas que atestiguan el gusto por la alta artesanía en Europa.
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="../images/figuras.jpg" alt="Arte de la Porcelana y el Cristal">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="Logo Museo José Luis Bello y Zetina" class="logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../html/casa.html">LA CASA</a></li>
+                    <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                    <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                    <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>5 DE MAYO 409, CENTRO<br>
+                PUEBLA, PUE. 72000 MÉXICO<br>
+                TEL +52 (222) 232 4720<br>
+                <a href="mailto:CONTACTO@MUSEOBELLO.ORG">CONTACTO@MUSEOBELLO.ORG</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

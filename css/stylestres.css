@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #333; 
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 120px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Menu links */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffdd57; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.hero-section {
+    background-image: url(../images/familia.jpg);
+    background-size: cover; 
+    background-position: top;
+    height: 520px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #000;
+}
+
+.overlay p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-shadow: 0 0 15px #000;
+}
+
+.legacy-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin: 20px;
+}
+
+.content-container {
+    max-width: 600px;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    color: #104e8b; 
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    font-size: 0.9rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-container p strong {
+    font-weight: bold;
+}
+
+.familia-bello-seccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.familia-bello-texto {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.familia-bello-texto p {
+    font-size: 0.9rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.familia-bello-texto p strong {
+    font-weight: bold;
+}
+
+.familia-bello-imagen {
+    max-width: 592px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.familia-bello-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.galeria-familia-bello {
+    margin-bottom:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.imagen-galeria {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.imagen-galeria img {
+    width: 300px;
+    height: 200px;
+    min-width: 150px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    background-color: #2b2b2b; 
+    color: #ffffff; 
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.logo-img {
+    width: 130px; 
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #d3d3d3; 
+}
+
+.footer-contact p {
+    font-size: 0.85em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    color: #d3d3d3;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        z-index: 9;
+    }
+
+    .nav-links.nav-active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+        z-index: 10;
+    }
+
+    .legacy-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container {
+        max-width: 600px;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 0;
+        padding: 10px;
+    }
+
+    .content-container h2 {
+        margin-bottom: 0;
+    }
+
+    .content-container p {
+        margin-bottom: 0;
+        margin-top: 10px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .image-container img {
+        max-width: 300px;
+        border-radius: 8px;
+        padding-top: 0;
+    }
+
+    .familia-bello-seccion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .familia-bello-imagen{
+        width: 300px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}

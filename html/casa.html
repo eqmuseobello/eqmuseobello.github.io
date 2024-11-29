@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa</title>
+    <link rel="stylesheet" href="../css/stylesdos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="Logo del museo" class="logo-img"></a> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/casa.html">LA CASA</a></li>
+                <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+            </ul>
+            <!-- Menú hamburguesa -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="overlay">
+            <h1 class="animate__animated animate__zoomInDown">La Casa</h1>
+            <p class="animate__animated animate__zoomInDown">
+                La casa que alberga la colección de Don José Luis Bello y Zetina es un lugar único, donde historia y arte se fusionan.
+                Este espacio refleja la rica herencia cultural de Puebla, ofreciendo una experiencia inmersiva en la tradición arquitectónica y artística de la región.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-museum">
+        <div class="text-container">
+            <h1 class="animate__animated animate__bounce">La Casa: Museo<br>José Luis Bello y Zetina</h1>
+            <p>
+                La casa que alberga la colección artística de Don José Luis Bello y Zetina es un espacio histórico y único.
+                Originalmente formaba parte del monumental <strong>convento de la Orden de Santo Domingo de Guzmán</strong>, 
+                el cual abarcaba dos manzanas enteras. Sin embargo, tras la expropiación de propiedades eclesiásticas en 1861 
+                por las Leyes de Reforma, gran parte del convento fue destruido y el resto fue vendido a particulares.
+            </p>
+            <p>
+                El abuelo de nuestro coleccionista, Don José Luis Bello y González, adquirió el antiguo portal de peregrinos 
+                del convento, adaptando la planta baja para comercios. En la planta alta, construyó una casa en la que viviría 
+                su familia. Este espacio, con sus detalles barrocos del siglo XVII y la influencia del estilo del siglo XIX en 
+                su fachada, es un testamento arquitectónico que refleja la historia de Puebla y la herencia de la familia Bello.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="../images/entrada.jpg" alt="Entrada del Museo José Luis Bello y Zetina">
+        </div>
+    </section>
+
+    <section class="exhibition-section">
+        <div class="image-container">
+            <img src="../images/fachadados.jpg" alt="Imagen de la Casa Museo">
+        </div>
+        <div class="content-container">
+            <h2 class="animate__animated animate__bo animate__bounce animate__delay-2s">Salas de Exhibición</h2>
+            <p>
+                La casa cuenta con diez salas de exhibición que ofrecen un recorrido por la riqueza artística y cultural de diversas épocas y estilos. Cada sala resalta el gusto y dedicación de la familia Bello por preservar el arte:
+            </p>
+            <strong>
+                <ul>
+                    <li>Pinturas Flamencas y Francesas</li>
+                    <li>Pinturas Españolas</li>
+                    <li>Recámara</li>
+                    <li>Miniaturas y Grabados</li>
+                    <li>Sala Napoleón III</li>
+                    <li>Biblioteca</li>
+                    <li>Pinturas Mexicanas</li>
+                    <li>Pinturas Poblanas</li>
+                    <li>Pinturas Italianas</li>
+                    <li>Comedor</li>
+                </ul>
+            </strong>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="Logo Museo José Luis Bello y Zetina" class="logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../html/casa.html">LA CASA</a></li>
+                    <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                    <li><a href="../html/colecciondepintura.html">COLECCIÓN DE PINTURA</a></li>
+                    <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>5 DE MAYO 409, CENTRO<br>
+                PUEBLA, PUE. 72000 MÉXICO<br>
+                TEL +52 (222) 232 4720<br>
+                <a href="mailto:CONTACTO@MUSEOBELLO.ORG">CONTACTO@MUSEOBELLO.ORG</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo José Luis Bello y Zetina</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo del museo" class="logo-img"></a> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/casa.html">LA CASA</a></li>
+                <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+            </ul>
+            <!-- Menú hamburguesa -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-text animate__animated animate__zoomInDown">
+            <h1 class="main-title animate__animated animate__zoomInDown">Explora el arte y la historia en un solo lugar.</h1>
+            <a href="#2" class="btn animate__animated animate__zoomInDown">Conoce más</a>
+        </div>
+    </section>
+
+    <section class="exhibitions-section" id="2">
+        <h2 class="animate__animated animate__bounce">Exposiciones Actuales y Próximas</h2>
+        <p class="subtitle">
+            Sumérgete en colecciones especiales que destacan la historia, el arte y la cultura, con piezas únicas de
+            nuestros artistas en exposiciones temporales.
+        </p>
+    </section>
+
+    <div class="exhibitions-container">
+        <div class="exhibition-item">
+            <img src="images/bronce.jpg" alt="Cuerpos de Piedra y Bronce">
+            <h3>Cuerpos de Piedra y Bronce</h3>
+            <p>Un viaje por la expresión artística a través de esculturas que exploran la forma y la tridimensionalidad.
+            </p>
+            <button>Saber más</button>
+        </div>
+
+        <div class="exhibition-item">
+            <img src="images/piano.jpg" alt="Tesoros Frágiles">
+            <h3>Tesoros Frágiles</h3>
+            <p>Admira piezas de porcelana y objetos que capturan el arte y la delicadeza en cada detalle.</p>
+            <button>Saber más</button>
+        </div>
+
+        <div class="exhibition-item">
+            <img src="images/comedor.jpg" alt="Espacios en el Tiempo">
+            <h3>Espacios en el Tiempo</h3>
+            <p>Descubre cómo los muebles reflejan el estilo y la vida de cada época.</p>
+            <button>Saber más</button>
+        </div>
+    </div>
+    </section>
+    <section class="gallery-section">
+        <h2>Galería de Imágenes</h2>
+        <p class="gallery-subtitle">
+            Explora la belleza y la diversidad de nuestras colecciones a través de nuestra galería de imágenes.
+            Sumérgete en cada detalle y déjate inspirar antes de tu visita.
+        </p>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/carrusel1.jpg" alt="Imagen 1" class="carousel-image active">
+                <img src="images/carrusel2.jpeg" alt="Imagen 2" class="carousel-image">
+                <img src="images/carrusel3.jpg" alt="Imagen 3" class="carousel-image">
+            </div>
+            <button class="carousel-button left">&#10094;</button>
+            <button class="carousel-button right">&#10095;</button>
+
+            <div class="carousel-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        const images = document.querySelectorAll(".carousel-image");
+        const indicators = document.querySelectorAll(".indicator");
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const offset = -index * 100;
+            document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
+
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle("active", i === index);
+            });
+        }
+
+        document.querySelector(".carousel-button.left").addEventListener("click", () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        });
+
+        document.querySelector(".carousel-button.right").addEventListener("click", () => {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            showImage(currentIndex);
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener("click", () => {
+                currentIndex = index;
+                showImage(currentIndex);
+            });
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }, 3000);
+
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="Logo Museo José Luis Bello y Zetina" class="logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../html/casa.html">LA CASA</a></li>
+                    <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                    <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                    <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>5 DE MAYO 409, CENTRO<br>
+                    PUEBLA, PUE. 72000 MÉXICO<br>
+                    TEL +52 (222) 232 4720<br>
+                    <a href="mailto:CONTACTO@MUSEOBELLO.ORG">CONTACTO@MUSEOBELLO.ORG</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+
+</html>

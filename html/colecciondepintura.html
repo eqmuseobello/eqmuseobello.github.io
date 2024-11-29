@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de Muebles</title>
+    <link rel="stylesheet" href="../css/stylecuatro.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo del museo" class="logo-img"></a> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="../html/casa.html">LA CASA</a></li>
+            <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+            <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+            <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+        </ul>
+        <!-- Menú hamburguesa -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-text animate__zoomInDown">
+            <h1 class="animate__animated animate__zoomInDown">Colección de Muebles</h1>
+            <p class="animate__animated animate__zoomInDown">
+                Descubre el arte de la época a través de nuestra colección de muebles históricos. 
+                Sumérgete en la elegancia de cada sala y vive la historia de cerca.
+            </p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="content">
+        <div class="text">
+            <h1 class="animate__animated animate__bounce">Una Colección de Muebles Históricos</h1>
+            <p>
+            El Museo José Luis Bello y Zetina alberga una destacada colección de muebles que representa varios estilos y épocas, exhibidos en siete de sus salas. Cada uno de estos espacios refleja el lujo y la riqueza cultural de diferentes épocas, destacando la habilidad artesanal y la diversidad de materiales utilizados.
+            </p>
+            <p>
+            La colección incluye un elegante comedor de estilo Renacimiento Italiano, que evoca la grandeza y sofisticación del diseño renacentista. En la sala de la música, el estilo del Primer Imperio Francés da vida a un ambiente de refinada elegancia, mientras que la Sala Napoleón III muestra el esplendor del Segundo Imperio Francés con un conjunto de 29 piezas incrustadas en concha de nácar, una técnica minuciosa que añade brillo y color a cada mueble.
+            </p>
+        </div>
+        <div class="image">
+            <img src="../images/figuras.jpg" alt="Sala de muebles históricos">
+        </div>
+        </section>
+    </main>
+
+    <main class="container">
+        <section class="content">
+        <div class="image">
+            <img src="../images/sala.jpg" alt="Sala de muebles históricos">
+        </div>
+        <div class="text">
+            <p>
+            Además, la biblioteca y la sala de pintura española destacan por su mobiliario poblano del estilo Barroco y Chippendale, estilos que fusionan influencias europeas con el carácter único de Puebla. La colección incluye piezas de los siglos XVII, XVIII y XIX, fabricadas con materiales nobles como marquetería en hueso, carey, bronce y diversas maderas finas, lo que demuestra la alta calidad y durabilidad de estas obras.
+            </p>
+            <p>
+            Cada mueble ha sido cuidadosamente conservado y restaurado para mantener su belleza original, permitiendo a los visitantes admirar el lujo y la elegancia de épocas pasadas en excelente estado. Esta colección de muebles es una ventana a la historia del diseño y el exquisito gusto de la familia Bello, convirtiéndose en una experiencia imperdible dentro del museo.
+            </p>
+        </div>
+        </section>
+    </main>
+    <div class="image-gallery">
+        <div class="image-container">
+            <img src="../images/cama.jpg" alt="Imagen 1">
+        </div>
+        <div class="image-container">
+            <img src="../images/ropero2.jpg" alt="Imagen 3">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="Logo Museo José Luis Bello y Zetina" class="logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../html/casa.html">LA CASA</a></li>
+                    <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                    <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                    <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>5 DE MAYO 409, CENTRO<br>
+                PUEBLA, PUE. 72000 MÉXICO<br>
+                TEL +52 (222) 232 4720<br>
+                <a href="mailto:CONTACTO@MUSEOBELLO.ORG">CONTACTO@MUSEOBELLO.ORG</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

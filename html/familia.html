@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia</title>
+    <link rel="stylesheet" href="../css/stylestres.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+               <a href="../index.html"><img src="../images/logo.png" alt="Logo del museo" class="logo-img"></a> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="../html/casa.html">LA CASA</a></li>
+                <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active'); 
+        });
+    </script>
+    <section class="hero-section">
+        <div class="overlay">
+            <h1 class="animate__animated animate__zoomInDown">Familia Bello</h1>
+            <p class="animate__animated animate__zoomInDown">
+                Conoce más sobre la historia de la familia, la casa que resguarda esta colección y las obras de arte que hacen del Museo José Luis Bello y Zetina un lugar imprescindible en Puebla.
+            </p>
+        </div>
+    </section>
+    
+    <section class="legacy-section">
+        <div class="image-container">
+            <img src="../images/joseluis.jpg" alt="Retrato de José Luis Bello y González">
+        </div>
+        <div class="content-container">
+            <h2 class="animate__animated animate__bounce">Legado de la Familia Bello</h2>
+            <p>
+                La historia de la familia Bello es una mezcla de emprendimiento, compromiso con la comunidad y una gran pasión por el arte.
+            </p>
+            <p>
+                El Sr. <strong>José Luis Bello y González</strong>, abuelo de Don José Luis Bello y Zetina, llegó a Puebla desde su natal Veracruz en 1822, acompañado de su amigo y socio Don Francisco Cabrera y Ferrando. Juntos fundaron la compañía “Bello, Cabrera y Cía.”, que se expandió en sectores como los negocios inmobiliarios, un molino y una fábrica textil. Gracias al éxito financiero de estos emprendimientos, comenzaron a invertir en la adquisición de obras de arte, formando así el inicio de una gran colección.
+            </p>
+        </div>
+    </section>
+
+    <section class="familia-bello-seccion">
+        <div class="familia-bello-texto">
+            <p>Durante la invasión francesa de 1862, el Sr. Bello y González mostró su compromiso patriótico al colaborar con el General Ignacio Zaragoza en la defensa del Fuerte de Loreto y en la recaudación de fondos para la resistencia. Posteriormente, con la desamortización de los bienes eclesiásticos decretada por el Presidente Benito Juárez, la familia adquirió varios inmuebles, consolidando su presencia en Puebla.</p>
+    
+            <p>Al fallecer, el Sr. Bello y González dejó un legado de 324 <strong>pinturas</strong> que fueron repartidas entre sus cuatro hijos. Uno de ellos, Mariano Bello y Acedo, decidió donar su herencia al estado en 1944, permitiendo la creación del <strong>Museo José Luis Bello y González</strong> en la casa familiar en la esquina de las calles 3 Sur y 3 Poniente de Puebla.</p>
+    
+            <p>Otro de sus hijos, Rodolfo, es el padre de Don José Luis Bello y Zetina, fundador de nuestro museo y heredero de esta tradición de amor por el arte y la cultura.</p>
+        </div>
+        <div class="familia-bello-imagen">
+            <img src="../images/josebello.jpg" alt="Retrato de Mariano Bello y Acedo">
+        </div>
+    </section>
+
+    
+    <section class="galeria-familia-bello">
+        <div class="imagen-galeria">
+            <img src="../images/donjose.jpg" alt="Retrato de un miembro de la Familia Bello">
+        </div>
+        <div class="imagen-galeria">
+            <img src="../images/cuadro.jpg" alt="Otro retrato de la Familia Bello">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo.png" alt="Logo Museo José Luis Bello y Zetina" class="logo-img">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../html/casa.html">LA CASA</a></li>
+                    <li><a href="../html/familia.html">LA FAMILIA BELLO</a></li>
+                    <li><a href="../html/colecciondepintura.html">COLECCIÓN DE MUEBLES</a></li>
+                    <li><a href="../html/porcelanayobjetos.html">PORCELANA Y OBJETOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>5 DE MAYO 409, CENTRO<br>
+                PUEBLA, PUE. 72000 MÉXICO<br>
+                TEL +52 (222) 232 4720<br>
+                <a href="mailto:CONTACTO@MUSEOBELLO.ORG">CONTACTO@MUSEOBELLO.ORG</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

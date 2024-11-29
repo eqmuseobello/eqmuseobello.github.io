@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #333; 
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+
+.nav-links.nav-open {
+    transform: translateY(0%);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 120px; 
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.logo span {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffdd57; 
+}
+
+.hero-section  h1 {
+    font-size: 2rem;
+    color: #fff; 
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 0 15px #000;
+}
+.hero-section {
+    background-image: url(../images/fachada.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 520px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #000000;;
+}
+
+.overlay {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+.section-museum {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 40px 0 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 40px;
+    
+}
+
+.text-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366; 
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-container p {
+    text-align: justify;
+    font-size: 0.9rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.text-container strong {
+    font-weight: bold;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 100%;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.exhibition-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 40px 0 40px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.content-container {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #104e8b; 
+    margin-bottom: 10px;
+}
+
+.content-container p {
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+}
+
+.content-container ul li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #2b2b2b; 
+    color: #ffffff; 
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.logo-img {
+    width: 130px; 
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #d3d3d3; 
+}
+
+.footer-contact p {
+    font-size: 0.85em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact a:hover {
+    color: #d3d3d3; 
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.nav-open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background: #333;
+        top: 60px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .section-museum{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-museum h1{
+        text-align: center;
+    }
+
+    .section-museum p{
+        text-align: justify;
+    }
+
+    .exhibition-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}.animate__bo {
+}
+.animate__delay-2s {
+}
